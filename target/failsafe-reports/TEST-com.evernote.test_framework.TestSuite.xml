@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.evernote.test_framework.TestSuite" time="135.156" tests="39" errors="5" skipped="12" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/OstrolutskyiArtem/Work/evernote_test_framework/target/test-classes:/Users/OstrolutskyiArtem/Work/evernote_test_framework/target/evernote_test_framework-1.0-SNAPSHOT.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/rest-assured/5.0.1/rest-assured-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/json-path/5.0.1/json-path-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/rest-assured-common/5.0.1/rest-assured-common-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/xml-path/5.0.1/xml-path-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-core/2.3.2/serenity-core-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1.jar:/Users/OstrolutskyiArtem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/OstrolutskyiArtem/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/OstrolutskyiArtem/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/ow2/asm/asm/7.2/asm-7.2.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/OstrolutskyiArtem/.m2/repository/org/objenesis/objenesis/3.0.1/objenesis-3.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/Users/OstrolutskyiArtem/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-core/6.6.0/cucumber-core-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-gherkin/6.6.0/cucumber-gherkin-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.6.0/cucumber-gherkin-messages-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/messages/13.0.1/messages-13.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/datatable/3.4.0/datatable-3.4.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-plugin/6.6.0/cucumber-plugin-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/docstring/6.6.0/docstring-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/create-meta/2.0.1/create-meta-2.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-java/6.6.0/cucumber-java-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/OstrolutskyiArtem/.m2/repository/io/vavr/vavr/0.9.0/vavr-0.9.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/vavr/vavr-match/0.9.0/vavr-match-0.9.0.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/OstrolutskyiArtem/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-impl-2.3.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-report-resources/2.3.2/serenity-report-resources-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-model/2.3.2/serenity-model-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar:/Users/OstrolutskyiArtem/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-reports/2.3.2/serenity-reports-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-stats/2.3.2/serenity-stats-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.3.31/kotlin-stdlib-1.3.31.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.31/kotlin-stdlib-common-1.3.31.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/OstrolutskyiArtem/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/com/paulhammant/ngwebdriver/1.1.5/ngwebdriver-1.1.5.jar:/Users/OstrolutskyiArtem/.m2/repository/com/assertthat/selenium-shutterbug/0.9.3/selenium-shutterbug-0.9.3.jar:/Users/OstrolutskyiArtem/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar:/Users/OstrolutskyiArtem/.m2/repository/com/github/zafarkhaja/java-semver/0.9.0/java-semver-0.9.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.37.0/htmlunit-driver-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/appium/java-client/7.3.0/java-client-7.3.0.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-context-support/5.1.2.RELEASE/spring-context-support-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-aop/5.1.2.RELEASE/spring-aop-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-expression/5.1.2.RELEASE/spring-expression-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-jcl/5.1.2.RELEASE/spring-jcl-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/groovy/groovy/2.5.5/groovy-2.5.5.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/OstrolutskyiArtem/.m2/repository/joda-time/joda-time/2.7/joda-time-2.7.jar:/Users/OstrolutskyiArtem/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar:/Users/OstrolutskyiArtem/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/Users/OstrolutskyiArtem/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.37.0/htmlunit-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.37.0/htmlunit-core-js-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.37.0/neko-htmlunit-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.5.0/htmlunit-cssparser-1.5.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.26.v20200117/websocket-client-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-client/9.4.26.v20200117/jetty-client-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-http/9.4.26.v20200117/jetty-http-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.26.v20200117/jetty-xml-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-util/9.4.26.v20200117/jetty-util-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-io/9.4.26.v20200117/jetty-io-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.26.v20200117/websocket-common-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.26.v20200117/websocket-api-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/Users/OstrolutskyiArtem/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/Users/OstrolutskyiArtem/.m2/repository/org/asciidoctor/asciidoctorj/1.5.6/asciidoctorj-1.5.6.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jruby/jruby-complete/1.7.26/jruby-complete-1.7.26.jar:/Users/OstrolutskyiArtem/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar:/Users/OstrolutskyiArtem/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/OstrolutskyiArtem/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/awaitility/awaitility/4.0.1/awaitility-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/typesafe/config/1.3.1/config-1.3.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-all/0.34.30/flexmark-all-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark/0.34.30/flexmark-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.34.30/flexmark-ext-abbreviation-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.34.30/flexmark-ext-admonition-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.34.30/flexmark-ext-anchorlink-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.34.30/flexmark-ext-aside-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.34.30/flexmark-ext-attributes-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.34.30/flexmark-ext-autolink-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.34.30/flexmark-ext-definition-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.34.30/flexmark-ext-emoji-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.34.30/flexmark-ext-enumerated-reference-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.34.30/flexmark-ext-escaped-character-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.34.30/flexmark-ext-footnotes-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.34.30/flexmark-ext-gfm-issues-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.34.30/flexmark-ext-gfm-strikethrough-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.34.30/flexmark-ext-gfm-tables-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.34.30/flexmark-ext-gfm-tasklist-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.34.30/flexmark-ext-gfm-users-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.34.30/flexmark-ext-gitlab-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.34.30/flexmark-ext-jekyll-front-matter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.34.30/flexmark-ext-jekyll-tag-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.34.30/flexmark-ext-media-tags-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-test-util/0.34.30/flexmark-test-util-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.34.30/flexmark-ext-ins-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.34.30/flexmark-ext-xwiki-macros-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.34.30/flexmark-ext-superscript-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.34.30/flexmark-ext-tables-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.34.30/flexmark-ext-toc-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.34.30/flexmark-ext-typographic-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.34.30/flexmark-ext-wikilink-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.34.30/flexmark-ext-yaml-front-matter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.34.30/flexmark-ext-youtube-embedded-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-formatter/0.34.30/flexmark-formatter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-html-parser/0.34.30/flexmark-html-parser-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.34.30/flexmark-jira-converter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.34.30/flexmark-pdf-converter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/0.0.1-RC13/openhtmltopdf-core-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/0.0.1-RC13/openhtmltopdf-pdfbox-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar:/Users/OstrolutskyiArtem/.m2/repository/de/rototor/pdfbox/graphics2d/0.12/graphics2d-0.12.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/0.0.1-RC13/openhtmltopdf-rtl-support-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/com/ibm/icu/icu4j/59.1/icu4j-59.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/0.0.1-RC13/openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.34.30/flexmark-profile-pegdown-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-util/0.34.30/flexmark-util-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.34.30/flexmark-youtrack-converter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/io/github/bonigarcia/webdrivermanager/4.1.0/webdrivermanager-4.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-jbehave/1.46.0/serenity-jbehave-1.46.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jbehave/jbehave-core/4.4/jbehave-core-4.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest-integration/1.3/hamcrest-integration-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/github/valfirst/jbehave-junit-runner/2.2.0/jbehave-junit-runner-2.2.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar:/Users/OstrolutskyiArtem/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/groovy/groovy-all/2.4.13/groovy-all-2.4.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar:/Users/OstrolutskyiArtem/.m2/repository/junit/junit/4.12/junit-4.12.jar:"/>
+    <property name="java.vm.vendor" value="BellSoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://bell-sw.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib"/>
+    <property name="sun.java.command" value="/Users/OstrolutskyiArtem/Work/evernote_test_framework/target/surefire/surefirebooter1739262841021509600.jar /Users/OstrolutskyiArtem/Work/evernote_test_framework/target/surefire 2022-05-12T23-21-38_575-jvmRun1 surefire3077327001751468103tmp surefire_02301263128339306519tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/OstrolutskyiArtem/Work/evernote_test_framework/target/test-classes:/Users/OstrolutskyiArtem/Work/evernote_test_framework/target/evernote_test_framework-1.0-SNAPSHOT.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/rest-assured/5.0.1/rest-assured-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/json-path/5.0.1/json-path-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/rest-assured-common/5.0.1/rest-assured-common-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/rest-assured/xml-path/5.0.1/xml-path-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-core/2.3.2/serenity-core-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/net/bytebuddy/byte-buddy/1.10.1/byte-buddy-1.10.1.jar:/Users/OstrolutskyiArtem/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.1/byte-buddy-agent-1.10.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/OstrolutskyiArtem/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/OstrolutskyiArtem/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/ow2/asm/asm/7.2/asm-7.2.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/OstrolutskyiArtem/.m2/repository/org/objenesis/objenesis/3.0.1/objenesis-3.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/Users/OstrolutskyiArtem/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-core/6.6.0/cucumber-core-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-gherkin/6.6.0/cucumber-gherkin-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.6.0/cucumber-gherkin-messages-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/messages/13.0.1/messages-13.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/datatable/3.4.0/datatable-3.4.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-plugin/6.6.0/cucumber-plugin-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/docstring/6.6.0/docstring-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/create-meta/2.0.1/create-meta-2.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/io/cucumber/cucumber-java/6.6.0/cucumber-java-6.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/OstrolutskyiArtem/.m2/repository/io/vavr/vavr/0.9.0/vavr-0.9.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/vavr/vavr-match/0.9.0/vavr-match-0.9.0.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/OstrolutskyiArtem/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-impl-2.3.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-report-resources/2.3.2/serenity-report-resources-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-model/2.3.2/serenity-model-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar:/Users/OstrolutskyiArtem/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-reports/2.3.2/serenity-reports-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-stats/2.3.2/serenity-stats-2.3.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.3.31/kotlin-stdlib-1.3.31.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.31/kotlin-stdlib-common-1.3.31.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/OstrolutskyiArtem/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/OstrolutskyiArtem/.m2/repository/com/paulhammant/ngwebdriver/1.1.5/ngwebdriver-1.1.5.jar:/Users/OstrolutskyiArtem/.m2/repository/com/assertthat/selenium-shutterbug/0.9.3/selenium-shutterbug-0.9.3.jar:/Users/OstrolutskyiArtem/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar:/Users/OstrolutskyiArtem/.m2/repository/com/github/zafarkhaja/java-semver/0.9.0/java-semver-0.9.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.37.0/htmlunit-driver-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/io/appium/java-client/7.3.0/java-client-7.3.0.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-context-support/5.1.2.RELEASE/spring-context-support-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-aop/5.1.2.RELEASE/spring-aop-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-expression/5.1.2.RELEASE/spring-expression-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/springframework/spring-jcl/5.1.2.RELEASE/spring-jcl-5.1.2.RELEASE.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/groovy/groovy/2.5.5/groovy-2.5.5.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/OstrolutskyiArtem/.m2/repository/joda-time/joda-time/2.7/joda-time-2.7.jar:/Users/OstrolutskyiArtem/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar:/Users/OstrolutskyiArtem/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/Users/OstrolutskyiArtem/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/OstrolutskyiArtem/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.37.0/htmlunit-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.37.0/htmlunit-core-js-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.37.0/neko-htmlunit-2.37.0.jar:/Users/OstrolutskyiArtem/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/OstrolutskyiArtem/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.5.0/htmlunit-cssparser-1.5.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.26.v20200117/websocket-client-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-client/9.4.26.v20200117/jetty-client-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-http/9.4.26.v20200117/jetty-http-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.26.v20200117/jetty-xml-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-util/9.4.26.v20200117/jetty-util-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/jetty-io/9.4.26.v20200117/jetty-io-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.26.v20200117/websocket-common-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.26.v20200117/websocket-api-9.4.26.v20200117.jar:/Users/OstrolutskyiArtem/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/Users/OstrolutskyiArtem/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/Users/OstrolutskyiArtem/.m2/repository/org/asciidoctor/asciidoctorj/1.5.6/asciidoctorj-1.5.6.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jruby/jruby-complete/1.7.26/jruby-complete-1.7.26.jar:/Users/OstrolutskyiArtem/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/OstrolutskyiArtem/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar:/Users/OstrolutskyiArtem/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/OstrolutskyiArtem/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/OstrolutskyiArtem/.m2/repository/org/awaitility/awaitility/4.0.1/awaitility-4.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/typesafe/config/1.3.1/config-1.3.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/Users/OstrolutskyiArtem/.m2/repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-all/0.34.30/flexmark-all-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark/0.34.30/flexmark-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.34.30/flexmark-ext-abbreviation-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.34.30/flexmark-ext-admonition-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.34.30/flexmark-ext-anchorlink-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.34.30/flexmark-ext-aside-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.34.30/flexmark-ext-attributes-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.34.30/flexmark-ext-autolink-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.34.30/flexmark-ext-definition-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.34.30/flexmark-ext-emoji-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.34.30/flexmark-ext-enumerated-reference-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.34.30/flexmark-ext-escaped-character-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.34.30/flexmark-ext-footnotes-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.34.30/flexmark-ext-gfm-issues-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.34.30/flexmark-ext-gfm-strikethrough-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.34.30/flexmark-ext-gfm-tables-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.34.30/flexmark-ext-gfm-tasklist-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.34.30/flexmark-ext-gfm-users-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.34.30/flexmark-ext-gitlab-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.34.30/flexmark-ext-jekyll-front-matter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.34.30/flexmark-ext-jekyll-tag-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.34.30/flexmark-ext-media-tags-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-test-util/0.34.30/flexmark-test-util-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.34.30/flexmark-ext-ins-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.34.30/flexmark-ext-xwiki-macros-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.34.30/flexmark-ext-superscript-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.34.30/flexmark-ext-tables-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.34.30/flexmark-ext-toc-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.34.30/flexmark-ext-typographic-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.34.30/flexmark-ext-wikilink-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.34.30/flexmark-ext-yaml-front-matter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.34.30/flexmark-ext-youtube-embedded-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-formatter/0.34.30/flexmark-formatter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-html-parser/0.34.30/flexmark-html-parser-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.34.30/flexmark-jira-converter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.34.30/flexmark-pdf-converter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/0.0.1-RC13/openhtmltopdf-core-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/0.0.1-RC13/openhtmltopdf-pdfbox-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar:/Users/OstrolutskyiArtem/.m2/repository/de/rototor/pdfbox/graphics2d/0.12/graphics2d-0.12.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/0.0.1-RC13/openhtmltopdf-rtl-support-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/com/ibm/icu/icu4j/59.1/icu4j-59.1.jar:/Users/OstrolutskyiArtem/.m2/repository/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/0.0.1-RC13/openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.34.30/flexmark-profile-pegdown-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-util/0.34.30/flexmark-util-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.34.30/flexmark-youtrack-converter-0.34.30.jar:/Users/OstrolutskyiArtem/.m2/repository/io/github/bonigarcia/webdrivermanager/4.1.0/webdrivermanager-4.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/OstrolutskyiArtem/.m2/repository/net/serenity-bdd/serenity-jbehave/1.46.0/serenity-jbehave-1.46.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/Users/OstrolutskyiArtem/.m2/repository/org/jbehave/jbehave-core/4.4/jbehave-core-4.4.jar:/Users/OstrolutskyiArtem/.m2/repository/org/hamcrest/hamcrest-integration/1.3/hamcrest-integration-1.3.jar:/Users/OstrolutskyiArtem/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar:/Users/OstrolutskyiArtem/.m2/repository/com/github/valfirst/jbehave-junit-runner/2.2.0/jbehave-junit-runner-2.2.0.jar:/Users/OstrolutskyiArtem/.m2/repository/org/reflections/reflections/0.9.11/reflections-0.9.11.jar:/Users/OstrolutskyiArtem/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/Users/OstrolutskyiArtem/.m2/repository/org/codehaus/groovy/groovy-all/2.4.13/groovy-all-2.4.13.jar:/Users/OstrolutskyiArtem/.m2/repository/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar:/Users/OstrolutskyiArtem/.m2/repository/junit/junit/4.12/junit-4.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/OstrolutskyiArtem"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre"/>
+    <property name="basedir" value="/Users/OstrolutskyiArtem/Work/evernote_test_framework"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/OstrolutskyiArtem/Work/evernote_test_framework/target/surefire/surefirebooter1739262841021509600.jar"/>
+    <property name="sun.boot.class.path" value="/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/resources.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/rt.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/sunrsasign.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/jsse.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/jce.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/charsets.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/jfr.jar:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_332-b09"/>
+    <property name="user.name" value="OstrolutskyiArtem"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.1"/>
+    <property name="java.endorsed.dirs" value="/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/OstrolutskyiArtem/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bell-sw.com/support"/>
+    <property name="java.io.tmpdir" value="/var/folders/67/pn9p0kmd0gj6hbfrhqpjpk940000gp/T/"/>
+    <property name="java.version" value="1.8.0_332"/>
+    <property name="user.dir" value="/Users/OstrolutskyiArtem/Work/evernote_test_framework"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/OstrolutskyiArtem/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="BellSoft"/>
+    <property name="java.vm.version" value="25.332-b09"/>
+    <property name="java.ext.dirs" value="/Users/OstrolutskyiArtem/Library/Java/Extensions:/Users/OstrolutskyiArtem/Library/Java/JavaVirtualMachines/liberica-1.8.0_332/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="BeforeStories" classname="java.lang.Object" time="0.001">
+    <system-out><![CDATA[Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=true,ignoreFailureInView=true,verboseFailures=false,verboseFiltering=false,storyTimeouts=300,threads=1,failOnStoryTimeout=false]
+
+(BeforeStories)
+
+]]></system-out>
+    <system-err><![CDATA[[main] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+]]></system-err>
+  </testcase>
+  <testcase name="AfterStories" classname="java.lang.Object" time="0.667">
+    <system-out><![CDATA[
+org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:161)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:116)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:29)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedELement(WebElementFacadeImpl.java:234)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:229)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.isDisplayed(WebElementFacadeImpl.java:1351)
+	(reflection-invoke)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:43)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.evernote.test_framework.pages.LoginPage.isPasswordFieldVisible(LoginPage.java:49)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps.is_password_field_visible(EndUserUiSteps.java:37)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible$accessor$aljKL1ls(Unknown Source)
+	(reflection-invoke)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible(Unknown Source)
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...
+
+
+(AfterStories)
+
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+Login again and make sure a last note created
+---------------------------------------------------------------------
+[pool-2-thread-1] ERROR  -     Test failed at step: Is password field visible
+[pool-2-thread-1] ERROR  -     Timed out after 2 seconds. Element not available
+]]></system-err>
+  </testcase>
+  <testcase name="Given the user is on the LoginPage" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="12.15">
+    <system-out><![CDATA[Using timeout for story LoginToWebsite.story of 300 secs.
+Running story stories/login/LoginToWebsite.story
+
+(stories/login/LoginToWebsite.story)
+Scenario: Unsuccessful login using wrong e-mail
+Given the user is on the LoginPage
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] INFO net.serenitybdd.jbehave.embedders.monitors.ReportingEmbedderMonitor - 1623009085story running with path stories/login/LoginToWebsite.story
+[pool-2-thread-1] ERROR net.serenitybdd.jbehave.embedders.monitors.ReportingEmbedderMonitor - can not find any story by path stories/login/LoginToWebsite.story
+[pool-2-thread-1] INFO  - Test Suite Started: Login to website
+[pool-2-thread-1] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Unsuccessful login using wrong e-mail(stories/login/LoginToWebsite.story;Unsuccessful login using wrong e-mail)
+-------------------------------------------------------------------
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (since Chrome 101 is installed in your machine)
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/OstrolutskyiArtem/.m2/repository/webdriver/chromedriver/mac64/101.0.4951.41/chromedriver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 19715
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 12, 2022 11:21:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When the user enters e-mail &apos;vasyl@vasyl&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="1.198">
+    <system-out><![CDATA[When the user enters e-mail 'vasyl@vasyl'
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="1.606">
+    <system-out><![CDATA[And the user clicks on login button
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user should see error response message &apos;There is no account for the username or email you entered․&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="13.117">
+    <error message="Timed out after 2 seconds. Element not available&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ua11-al-89OA&apos;, ip: &apos;fe80:0:0:0:8cc:e4c8:7a8a:f773%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.1&apos;, java.version: &apos;1.8.0_332&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: 
+Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.thenUserShouldSeeErrorResponseMessage(LoginUiSteps.java:38)
+]]></error>
+    <system-out><![CDATA[Then the user should see error response message 'There is no account for the username or email you entered.' (FAILED)
+(org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown)
+]]></system-out>
+  </testcase>
+  <testcase name="Given the user is on the LoginPage​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="11.044">
+    <system-out><![CDATA[
+org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:161)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:116)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:29)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedELement(WebElementFacadeImpl.java:234)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:229)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getText(WebElementFacadeImpl.java:1127)
+	(reflection-invoke)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:43)
+	at com.sun.proxy.$Proxy30.getText(Unknown Source)
+	at com.evernote.test_framework.pages.LoginPage.getResponseMessage(LoginPage.java:37)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps.should_see_definition(EndUserUiSteps.java:67)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.should_see_definition$accessor$aljKL1ls(Unknown Source)
+	(reflection-invoke)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.should_see_definition(Unknown Source)
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.thenUserShouldSeeErrorResponseMessage(LoginUiSteps.java:38)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...
+Scenario: Unsuccessful login using wrong e-mail
+Given the user is on the LoginPage
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+Unsuccessful login using wrong e-mail
+---------------------------------------------------------------------
+[pool-2-thread-1] ERROR  -     Test failed at step: Should see definition: There is no account for the username or email you entered.
+[pool-2-thread-1] ERROR  -     Timed out after 2 seconds. Element not available
+[pool-2-thread-1] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Unsuccessful login using wrong e-mail(stories/login/LoginToWebsite.story;Unsuccessful login using wrong e-mail)
+-------------------------------------------------------------------
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (since Chrome 101 is installed in your machine)
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/OstrolutskyiArtem/.m2/repository/webdriver/chromedriver/mac64/101.0.4951.41/chromedriver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 4334
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 12, 2022 11:22:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When the user enters e-mail &apos;ostrolutskyy@gmail․com&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0.991">
+    <system-out><![CDATA[When the user enters e-mail 'ostrolutskyy@gmail.com'
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="1.581">
+    <system-out><![CDATA[And the user clicks on login button
+]]></system-out>
+  </testcase>
+  <testcase name="And the user enters password &apos;password&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="13.058">
+    <error message="Timed out after 2 seconds. Element not available&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ua11-al-89OA&apos;, ip: &apos;fe80:0:0:0:8cc:e4c8:7a8a:f773%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.1&apos;, java.version: &apos;1.8.0_332&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: 
+Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+]]></error>
+    <system-out><![CDATA[And the user enters password 'password' (FAILED)
+(org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown)
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[And the user clicks on login button (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user should see incorrect password message &apos;Incorrect password․ You modified your password 1 day ago․&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then the user should see incorrect password message 'Incorrect password. You modified your password 1 day ago.' (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Given the user is on the LoginPage​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="9.515">
+    <system-out><![CDATA[
+org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:161)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:116)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:29)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedELement(WebElementFacadeImpl.java:234)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:229)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.isDisplayed(WebElementFacadeImpl.java:1351)
+	(reflection-invoke)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:43)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.evernote.test_framework.pages.LoginPage.isPasswordFieldVisible(LoginPage.java:49)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps.is_password_field_visible(EndUserUiSteps.java:37)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible$accessor$aljKL1ls(Unknown Source)
+	(reflection-invoke)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible(Unknown Source)
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...
+Scenario: Successful login using e-mail
+Given the user is on the LoginPage
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+Unsuccessful login using wrong e-mail
+---------------------------------------------------------------------
+[pool-2-thread-1] ERROR  -     Test failed at step: Is password field visible
+[pool-2-thread-1] ERROR  -     Timed out after 2 seconds. Element not available
+[pool-2-thread-1] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Successful login using e-mail(stories/login/LoginToWebsite.story;Successful login using e-mail)
+-------------------------------------------------------------------
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (since Chrome 101 is installed in your machine)
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/OstrolutskyiArtem/.m2/repository/webdriver/chromedriver/mac64/101.0.4951.41/chromedriver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 2918
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 12, 2022 11:22:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When the user enters e-mail &apos;ostrolutskyy@gmail․com&apos;​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0.962">
+    <system-out><![CDATA[When the user enters e-mail 'ostrolutskyy@gmail.com'
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="1.581">
+    <system-out><![CDATA[And the user clicks on login button
+]]></system-out>
+  </testcase>
+  <testcase name="And the user enters password &apos;proper_password&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="13.009">
+    <error message="Timed out after 2 seconds. Element not available&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ua11-al-89OA&apos;, ip: &apos;fe80:0:0:0:8cc:e4c8:7a8a:f773%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.1&apos;, java.version: &apos;1.8.0_332&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: 
+Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+]]></error>
+    <system-out><![CDATA[And the user enters password 'proper_password' (FAILED)
+(org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown)
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[And the user clicks on login button (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user is on the HomePage" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then the user is on the HomePage (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Given the user is on the LoginPage​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="10.794">
+    <system-out><![CDATA[Running story stories/login/LoginToWebsiteAndMakeNotes.story
+
+(stories/login/LoginToWebsiteAndMakeNotes.story)
+Scenario: Login and write a note followed by a logout
+Using timeout for story LoginToWebsiteAndMakeNotes.story of 300 secs.
+Given the user is on the LoginPage
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] INFO net.serenitybdd.jbehave.embedders.monitors.ReportingEmbedderMonitor - 1623009085story running with path stories/login/LoginToWebsiteAndMakeNotes.story
+[pool-2-thread-1] ERROR net.serenitybdd.jbehave.embedders.monitors.ReportingEmbedderMonitor - can not find any story by path stories/login/LoginToWebsiteAndMakeNotes.story
+[pool-2-thread-1] INFO  - Test Suite Started: Login to website and make notes
+[pool-2-thread-1] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Login and write a note followed by a logout(stories/login/LoginToWebsiteAndMakeNotes.story;Login and write a note followed by a logout)
+-------------------------------------------------------------------
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (since Chrome 101 is installed in your machine)
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/OstrolutskyiArtem/.m2/repository/webdriver/chromedriver/mac64/101.0.4951.41/chromedriver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 46405
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 12, 2022 11:23:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When the user enters e-mail &apos;ostrolutskyy@gmail․com&apos;​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0.925">
+    <system-out><![CDATA[When the user enters e-mail 'ostrolutskyy@gmail.com'
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="1.7">
+    <system-out><![CDATA[And the user clicks on login button
+]]></system-out>
+  </testcase>
+  <testcase name="And the user enters password &apos;proper_password&apos;​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="13.028">
+    <error message="Timed out after 2 seconds. Element not available&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ua11-al-89OA&apos;, ip: &apos;fe80:0:0:0:8cc:e4c8:7a8a:f773%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.1&apos;, java.version: &apos;1.8.0_332&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: 
+Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+]]></error>
+    <system-out><![CDATA[And the user enters password 'proper_password' (FAILED)
+(org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown)
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​​​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[And the user clicks on login button (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user is on the HomePage​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then the user is on the HomePage (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="When the user creates a note with text &apos;Simple text&apos;" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[When the user creates a note with text 'Simple text' (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on logout" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[And the user clicks on logout (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user follows by a logout" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then the user follows by a logout (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Given the user is on the LoginPage​​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="10.41">
+    <system-out><![CDATA[
+org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:161)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:116)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:29)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedELement(WebElementFacadeImpl.java:234)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:229)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.isDisplayed(WebElementFacadeImpl.java:1351)
+	(reflection-invoke)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:43)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.evernote.test_framework.pages.LoginPage.isPasswordFieldVisible(LoginPage.java:49)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps.is_password_field_visible(EndUserUiSteps.java:37)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible$accessor$aljKL1ls(Unknown Source)
+	(reflection-invoke)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible(Unknown Source)
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...
+Scenario: Login again and make sure a last note created
+Given the user is on the LoginPage
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+Login and write a note followed by a logout
+---------------------------------------------------------------------
+[pool-2-thread-1] ERROR  -     Test failed at step: Is password field visible
+[pool-2-thread-1] ERROR  -     Timed out after 2 seconds. Element not available
+[pool-2-thread-1] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Login again and make sure a last note created(stories/login/LoginToWebsiteAndMakeNotes.story;Login again and make sure a last note created)
+-------------------------------------------------------------------
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (since Chrome 101 is installed in your machine)
+[pool-2-thread-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/OstrolutskyiArtem/.m2/repository/webdriver/chromedriver/mac64/101.0.4951.41/chromedriver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[pool-2-thread-1] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--headless], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 1065
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 12, 2022 11:23:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When the user enters e-mail &apos;ostrolutskyy@gmail․com&apos;​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0.965">
+    <system-out><![CDATA[When the user enters e-mail 'ostrolutskyy@gmail.com'
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​​​​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="1.543">
+    <system-out><![CDATA[And the user clicks on login button
+]]></system-out>
+  </testcase>
+  <testcase name="And the user enters password &apos;proper_password&apos;​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="12.971">
+    <error message="Timed out after 2 seconds. Element not available&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;ua11-al-89OA&apos;, ip: &apos;fe80:0:0:0:8cc:e4c8:7a8a:f773%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.1&apos;, java.version: &apos;1.8.0_332&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException"><![CDATA[org.openqa.selenium.ElementNotVisibleException: 
+Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+]]></error>
+    <system-out><![CDATA[And the user enters password 'proper_password' (FAILED)
+(org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown)
+]]></system-out>
+  </testcase>
+  <testcase name="And the user clicks on login button​​​​​​​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[And the user clicks on login button (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user is on the HomePage​​" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[Then the user is on the HomePage (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="And a note with text &apos;Simple text&apos; has been created" classname="com.evernote.test_framework.steps.login.ui.LoginUiSteps" time="0">
+    <skipped/>
+    <system-out><![CDATA[And a note with text 'Simple text' has been created (NOT PERFORMED)
+]]></system-out>
+  </testcase>
+  <testcase name="Given the user have e-mail &apos;ostrolutskyy@gmail․com&apos; and password &apos;proper_password&apos;" classname="com.evernote.test_framework.steps.login.api.LoginApiSteps" time="0.003">
+    <system-out><![CDATA[
+org.openqa.selenium.ElementNotVisibleException: Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:161)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:116)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:29)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedELement(WebElementFacadeImpl.java:234)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:229)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.isDisplayed(WebElementFacadeImpl.java:1351)
+	(reflection-invoke)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:43)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.evernote.test_framework.pages.LoginPage.isPasswordFieldVisible(LoginPage.java:49)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps.is_password_field_visible(EndUserUiSteps.java:37)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible$accessor$aljKL1ls(Unknown Source)
+	(reflection-invoke)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.evernote.test_framework.steps.login.ui.EndUserUiSteps$ByteBuddy$gb62CWHU.is_password_field_visible(Unknown Source)
+	at com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...
+Scenario: Unsuccessful login using e-mail via api
+Given the user have e-mail 'ostrolutskyy@gmail.com' and password 'proper_password'
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+Successful login using e-mail
+---------------------------------------------------------------------
+[pool-2-thread-1] ERROR  -     Test failed at step: Is password field visible
+[pool-2-thread-1] ERROR  -     Timed out after 2 seconds. Element not available
+[pool-2-thread-1] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Unsuccessful login using e-mail via api(stories/login/LoginToWebsite.story;Unsuccessful login using e-mail via api)
+-------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="When the user send a login request" classname="com.evernote.test_framework.steps.login.api.LoginApiSteps" time="0.83">
+    <system-out><![CDATA[When the user send a login request
+]]></system-out>
+  </testcase>
+  <testcase name="Then the user get a suspicious response" classname="com.evernote.test_framework.steps.login.api.LoginApiSteps" time="0.003">
+    <system-out><![CDATA[/Login.action?err=true&message=login.error.suspicious
+Then the user get a suspicious response
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Scenario: Unsuccessful login using e-mail via api" time="0.003">
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err><![CDATA[[pool-2-thread-1] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Unsuccessful login using e-mail via api
+----------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="" classname="LoginToWebsite․story" time="0.007">
+    <system-out><![CDATA[
+]]></system-out>
+  </testcase>
+</testsuite>

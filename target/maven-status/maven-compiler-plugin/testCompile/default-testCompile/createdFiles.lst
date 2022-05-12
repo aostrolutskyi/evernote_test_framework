@@ -1,0 +1,8 @@
+com/evernote/test_framework/pages/MainPage.class
+com/evernote/test_framework/steps/login/api/EndUserApiSteps.class
+com/evernote/test_framework/TestSuite.class
+com/evernote/test_framework/steps/login/ui/EndUserUiSteps.class
+com/evernote/test_framework/steps/login/api/LoginApiSteps.class
+com/evernote/test_framework/pages/LoginPage.class
+com/evernote/test_framework/steps/login/ui/LoginUiSteps.class
+com/evernote/test_framework/pages/HomePage.class

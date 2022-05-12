@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Login to website and make notes" skipped="0" tests="2" time="52.35" timestamp="2022-05-12 11:23:00"><testcase name="Login and write a note followed by a logout"><error message="Timed out after 2 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+com.evernote.test_framework.pages.LoginPage.isPasswordFieldVisible(LoginPage.java:49)
+com.evernote.test_framework.steps.login.ui.EndUserUiSteps.is_password_field_visible(EndUserUiSteps.java:37)
+com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+</system-err></testcase><testcase name="Login again and make sure a last note created"><error message="Timed out after 2 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown</error><system-err>Timed out after 2 seconds. Element not available
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ua11-al-89OA', ip: 'fe80:0:0:0:8cc:e4c8:7a8a:f773%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.1', java.version: '1.8.0_332'
+Driver info: driver.version: unknown
+com.evernote.test_framework.pages.LoginPage.isPasswordFieldVisible(LoginPage.java:49)
+com.evernote.test_framework.steps.login.ui.EndUserUiSteps.is_password_field_visible(EndUserUiSteps.java:37)
+com.evernote.test_framework.steps.login.ui.LoginUiSteps.whenUserEntersPassword(LoginUiSteps.java:31)
+</system-err></testcase></testsuite>

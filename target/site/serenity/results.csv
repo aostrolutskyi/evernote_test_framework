@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login to website","Unsuccessful login using wrong e-mail","ERROR","2022-05-12T23:22:07.976+03:00[Europe/Kiev]","0.0","26.68"
+"Login to website","Successful login using e-mail","ERROR","2022-05-12T23:22:34.73+03:00[Europe/Kiev]","0.0","25.07"
+"Login to website","Unsuccessful login using e-mail via api","SUCCESS","2022-05-12T23:22:59.872+03:00[Europe/Kiev]","0.0","0.87"
+"Login to website and make notes","Login and write a note followed by a logout","ERROR","2022-05-12T23:23:00.747+03:00[Europe/Kiev]","0.0","26.45"
+"Login to website and make notes","Login again and make sure a last note created","ERROR","2022-05-12T23:23:27.276+03:00[Europe/Kiev]","0.0","25.9"
