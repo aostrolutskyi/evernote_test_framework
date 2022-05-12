@@ -1,7 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Thu May 12 23:23:53 EEST 2022
-stories/login/LoginToWebsiteAndMakeNotes.story=52000
-threads=1
-total=133000
-threadAverage=133000
-stories/login/LoginToWebsite.story=81000
